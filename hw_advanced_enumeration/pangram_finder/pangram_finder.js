@@ -1,13 +1,15 @@
 const PangramFinder = function (phrase) {
-  this.phrase = phrase;
+  this.phrase = phrase.toLowerCase();
   this.alphabet = 'qwertyuiopasdfghjklzxcvbnm'.split('');
 }
 
 PangramFinder.prototype.isPangram = function () {
   const alphabet = this.alphabet;
+  const sentence = this.splitPhrase();
 
-  //every
-  // phrase include every letter
+  return alphabet.every( (letter) => sentence.includes(letter) );
+
+
 }
 
 PangramFinder.prototype.splitPhrase = function () {

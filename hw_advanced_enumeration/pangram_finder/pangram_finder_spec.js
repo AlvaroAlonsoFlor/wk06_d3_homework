@@ -9,7 +9,7 @@ describe('PangramFinder', function () {
 
   it('should be able to detect a non-pangram', function () {
     const pangramFinder = new PangramFinder('this is not a pangram');
-    console.log('result:', pangramFinder.splitPhrase());
+    console.log('result:', pangramFinder.isPangram());
     assert.strictEqual(pangramFinder.isPangram(), false);
   });
 
