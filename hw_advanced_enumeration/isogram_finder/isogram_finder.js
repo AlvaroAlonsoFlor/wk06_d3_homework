@@ -1,15 +1,27 @@
 const IsogramFinder = function (word) {
-  this.word = word.toLowerCase()
-  // letters = letters without repetition
+  this.word = word.toLowerCase().split('')
+  letters = this.createLetters()
 
 }
 
 IsogramFinder.prototype.isIsogram = function () {
   //should use every
-  const word = this.word.split('')
+  const word = this.word;
 
-  letters.every( (letter) => word.includes(letter) )
+  return letters.every( (letter) => word.includes(letter) );
 
 }
+
+IsogramFinder.prototype.createLetters = function () {
+  const letters = []
+
+  this.word.forEach((item) => {
+    if (!letters.includes(item)) {
+      letters.push(item)
+    }
+  });
+
+  return letters
+};
 
 module.exports = IsogramFinder;
