@@ -14,7 +14,6 @@ describe('IsogramFinder', function () {
 
   it('should be able to detect an isogram case insensitively', function () {
     const isogramFinder = new IsogramFinder('Uncopyrightable');
-    console.log('testing:', isogramFinder.createLetters());
     assert.strictEqual(isogramFinder.isIsogram(), true);
   });
 
