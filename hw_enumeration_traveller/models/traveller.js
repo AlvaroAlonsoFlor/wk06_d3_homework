@@ -28,6 +28,21 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
+  // const result = new Set([this.journeys.map(item => item.transport)]);
+
+  // Ask why Set wasn't getting the unique elements only, does it work only with numbers?
+
+
+  const newArray = []
+  const array = this.getModesOfTransport()
+
+  array.forEach((item) => {
+    if (!newArray.includes(item)) {
+      newArray.push(item)
+    }
+  });
+
+  return newArray
 
 };
 
