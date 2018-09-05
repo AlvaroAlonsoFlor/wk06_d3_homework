@@ -3,11 +3,7 @@ const UpperCaser = function (words) {
 }
 
 UpperCaser.prototype.toUpperCase = function () {
-  const result = []
-  return this.words[0].toUpperCase()
-
-  return result.toUpperCase()
-
-}
+  return this.words.map( word => word.toUpperCase());
+};
 
 module.exports = UpperCaser;
