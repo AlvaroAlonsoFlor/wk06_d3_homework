@@ -32,7 +32,6 @@ Traveller.prototype.getUniqueModesOfTransport = function () {
 
   // Ask why Set wasn't getting the unique elements only, does it work only with numbers?
 
-
   const newArray = []
   const array = this.getModesOfTransport()
 

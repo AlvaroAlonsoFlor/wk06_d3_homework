@@ -1,3 +1,7 @@
 node_modules
 npm-debug.log
 hw_enumeration_traveler/node_modules
+hw_advanced_enumeration/anagram_finder/node_modules
+hw_advanced_enumeration/isogram_finder/node_modules
+hw_advanced_enumeration/pangram_finder/node_modules
+hw_advanced_enumeration/upper_caser/node_modules
